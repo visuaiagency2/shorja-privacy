@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حذف الحساب — شورجة إكسبريس</title>
+<style>
+  :root {
+    --primary: #C62828;
+    --text: #212121;
+    --muted: #757575;
+    --bg: #F5F5F5;
+    --card: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, "Noto Naskh Arabic", Arial, sans-serif;
+    line-height: 1.9;
+  }
+  header {
+    background: var(--primary);
+    color: #fff;
+    padding: 28px 16px;
+    text-align: center;
+  }
+  header h1 { margin: 0; font-size: 24px; }
+  header p { margin: 6px 0 0; font-size: 14px; opacity: .9; }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  section {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  h2 {
+    color: var(--primary);
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  ul { padding-right: 20px; padding-left: 0; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .en { direction: ltr; text-align: left; }
+  .en h2 { font-size: 17px; }
+  .en ul { padding-left: 20px; padding-right: 0; }
+  .en ol { padding-left: 20px; padding-right: 0; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    padding: 16px;
+  }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #E0E0E0; padding: 8px 10px; text-align: right; }
+  th { background: #FAFAFA; }
+  .steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+  }
+  .steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 10px 46px 10px 12px;
+    margin-bottom: 8px;
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .path {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  .note {
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    background: #FFF5F5;
+    font-size: 14px;
+  }
+  .app-id {
+    border-radius: 12px;
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    padding: 12px 16px;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  a { color: var(--primary); }
+  @media (max-width: 480px) {
+    header h1 { font-size: 20px; }
+    section { padding: 16px; }
+    .steps li { font-size: 14px; }
+    .path { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>طلب حذف الحساب — شورجة إكسبريس</h1>
+  <p>آخر تحديث: 26 تموز 2026</p>
+</header>
+
+<main>
+
+<section>
+  <h2>عن التطبيق</h2>
+  <div class="app-id">
+    <p style="margin:0"><strong>اسم التطبيق:</strong> شورجة إكسبريس (Shorja Express)</p>
+    <p style="margin:6px 0 0"><strong>المطوّر:</strong> شورجة إكسبريس (Shorja Express)</p>
+  </div>
+  <p>«شورجة إكسبريس» تطبيق سوق جملة عراقي يربط تجار الشورجة في بغداد
+  بأصحاب المحلات في عموم العراق. هذه الصفحة تشرح كيف تحذف حسابك،
+  وما الذي يُحذف فعلياً، وما الذي يبقى ولماذا.</p>
+</section>
+
+<section>
+  <h2>خطوات حذف الحساب من داخل التطبيق</h2>
+  <ol class="steps">
+    <li>افتح تطبيق شورجة إكسبريس وسجّل الدخول بحسابك.</li>
+    <li>من الشاشة الرئيسية اضغط أيقونة النقاط الثلاث <span class="path">⋮</span>
+    في أعلى الشاشة.</li>
+    <li>اختر <span class="path">ملفي الشخصي</span>.</li>
+    <li>انزل إلى أسفل الشاشة واضغط <span class="path">حذف حسابي</span>.</li>
+    <li>تظهر نافذة <span class="path">حذف الحساب — انتبه</span> تشرح النتائج،
+    اضغط <span class="path">أكمل الحذف</span>.</li>
+    <li>تظهر نافذة <span class="path">التأكيد الأخير</span>: اكتب كلمة
+    <strong>حذف</strong> في المربع، ثم اضغط
+    <span class="path">احذف حسابي نهائياً</span>.</li>
+  </ol>
+  <p class="muted">بعد نجاح الحذف يخرجك التطبيق فوراً إلى شاشة الدخول،
+  وتنتهي جلستك على كل الأجهزة التي كنت مسجلاً الدخول فيها.</p>
+</section>
+
+<section>
+  <h2>إذا لم يكن التطبيق مثبتاً عندك</h2>
+  <p>تستطيع طلب حذف حسابك عبر مراسلة فريق الدعم على واتساب:
+  <a href="https://wa.me/9647836061608">+964&nbsp;783&nbsp;606&nbsp;1608</a>
+  — أرسل رقم الهاتف المسجّل به حسابك واطلب حذفه، ويتولى الفريق
+  تنفيذ الطلب بعد التحقق من ملكيتك للرقم.</p>
+</section>
+
+<section>
+  <h2>ما الذي يُحذف أو لا يعود يظهر</h2>
+  <table>
+    <tr><th>العنصر</th><th>ما الذي يحدث له</th></tr>
+    <tr>
+      <td>الدخول إلى الحساب</td>
+      <td>يتوقف نهائياً، وتنتهي جلساتك على كل الأجهزة في الحال</td>
+    </tr>
+    <tr>
+      <td>رقم هاتفك</td>
+      <td>يُفصل عن الحساب ويعود متاحاً للتسجيل من جديد بحساب نظيف</td>
+    </tr>
+    <tr>
+      <td>معرّفات الإشعارات (توكنات الأجهزة)</td>
+      <td>تُحذف فعلياً، فلا يصلك أي إشعار بعد الحذف</td>
+    </tr>
+    <tr>
+      <td>منتجاتك (للتاجر)</td>
+      <td>تُرفع من السوق نهائياً ولا تظهر لأي مشترٍ</td>
+    </tr>
+    <tr>
+      <td>اسمك وصورتك الشخصية</td>
+      <td>لا يعودان يظهران لأي مستخدم — يظهر بدلاً منهما «حساب محذوف»
+      بلا صورة وبلا رقم</td>
+    </tr>
+    <tr>
+      <td>عنوانك</td>
+      <td>لا يُعرض لأي طرف بعد الحذف</td>
+    </tr>
+    <tr>
+      <td>طلبيات المزايدة والعروض المفتوحة</td>
+      <td>تُسحب فوراً ويُبلَّغ أصحاب العروض المرتبطة بها</td>
+    </tr>
+    <tr>
+      <td>اشتراكك (للتاجر)</td>
+      <td>ينتهي فوراً بلا استرداد، وأي طلب اشتراك معلّق يُرفض</td>
+    </tr>
+  </table>
+  <p class="muted">يبقى لدى إدارة المنصة سجل مغلق بالحساب المحذوف
+  (الاسم والرقم وتاريخ الحذف وعدد الطلبات المكتملة) للاطلاع فقط،
+  يُستخدم لمنع إساءة الاستخدام ولحسم النزاعات القديمة — بلا إمكانية
+  استرجاع الحساب.</p>
+</section>
+
+<section>
+  <h2>ما الذي يبقى ولماذا</h2>
+  <p>سجل التعامل في «شورجة إكسبريس» يخصّ <strong>طرفين</strong>، لا طرفاً
+  واحداً. محو نصفه بقرار طرف واحد يسلب الطرف الآخر دليله على معاملة
+  حصلت فعلاً، ويمحو تقييمات كسبها بجهده. لذلك تبقى هذه السجلات:</p>
+  <ul>
+    <li><strong>المحادثات كاملة</strong> (نصوص وصور ورسائل صوتية) — هي
+    الدليل الوحيد الذي يُعتمد عليه عند فتح نزاع رسمي على طلب.</li>
+    <li><strong>الطلبات الرسمية</strong> برقمها المرجعي ومبلغها وحالتها —
+    سجل معاملات بين الطرفين.</li>
+    <li><strong>التقييمات</strong> التي كتبتها أو استلمتها — لأنها تدخل في
+    سمعة الطرف الآخر وترتيب ظهوره في السوق.</li>
+    <li><strong>الملفات المرفوعة سابقاً</strong> (صور المنتجات وصور
+    المحادثات والرسائل الصوتية) — تبقى مخزّنة مرتبطة بهذه السجلات.</li>
+  </ul>
+  <p>كل ما سبق يظهر للطرف الآخر منسوباً إلى <strong>«حساب محذوف»</strong> —
+  بلا اسمك، وبلا رقمك، وبلا صورتك.</p>
+</section>
+
+<section>
+  <h2>مدة الاحتفاظ</h2>
+  <ul>
+    <li><strong>الحذف فوري:</strong> ينفَّذ لحظة تأكيدك، بلا فترة انتظار
+    وبلا فترة سماح.</li>
+    <li><strong>معرّفات الإشعارات</strong> تُحذف في اللحظة نفسها.</li>
+    <li><strong>السجلات المشتركة</strong> (المحادثات والطلبات والتقييمات)
+    <strong>تُحفظ بلا مدة زمنية محددة</strong> ما دامت المنصة تعمل. هذا
+    قرار مقصود لا إهمال: هذه السجلات ملك للطرفين معاً، وأي مهلة حذف
+    نضعها تعني أن حق الطرف الآخر في إثبات معاملاته وتقييماته ينتهي
+    بتاريخ لم يوافق عليه.</li>
+  </ul>
+  <p class="muted">لا نعِد بمدة لا نلتزم بها — لا يوجد في النظام أي عملية
+  حذف تلقائي مؤجل لهذه السجلات.</p>
+</section>
+
+<section>
+  <h2>قيد مهم قبل الحذف</h2>
+  <p>لا يمكن حذف الحساب ما دام لديك <strong>طلب فعّال غير محسوم</strong>
+  (بانتظار الموافقة، أو قيد التنفيذ، أو تم التسليم، أو عليه نزاع مفتوح).
+  في هذه الحالة يرفض النظام الطلب ويظهر لك:
+  «عندك طلبات فعالة، أكملها أو أغلقها أولاً» — أكمل الطلب أو ألغِه،
+  ثم أعد المحاولة.</p>
+</section>
+
+<section>
+  <h2>تنبيه</h2>
+  <div class="note">
+    <strong>حذف الحساب نهائي ولا يمكن التراجع عنه.</strong>
+    لا توجد أي طريقة لاسترجاع الحساب أو إعادة تفعيله بعد الحذف.
+    يمكنك التسجيل من جديد بنفس رقم الهاتف، لكنه سيكون حساباً جديداً
+    فارغاً بالكامل، بلا منتجاتك ولا محادثاتك ولا تقييماتك السابقة.
+  </div>
+</section>
+
+<section>
+  <h2>التواصل معنا</h2>
+  <p>لأي سؤال عن حذف حسابك أو بياناتك، راسل فريق الدعم على واتساب:
+  <a href="https://wa.me/9647836061608">+964&nbsp;783&nbsp;606&nbsp;1608</a></p>
+  <p class="muted">للاطلاع على تفاصيل البيانات التي نجمعها وكيف نستخدمها:
+  <a href="privacy_policy.html">سياسة الخصوصية</a></p>
+</section>
+
+<section class="en">
+  <h2>Account Deletion Request — Shorja Express (English Summary)</h2>
+  <p><strong>App:</strong> Shorja Express &nbsp;|&nbsp;
+  <strong>Developer:</strong> Shorja Express</p>
+  <p>Shorja Express is an Iraqi B2B wholesale marketplace connecting
+  Baghdad's Shorja merchants with shop owners across Iraq.</p>
+
+  <p><strong>How to delete your account in the app:</strong></p>
+  <ol>
+    <li>Open Shorja Express and sign in.</li>
+    <li>Tap the three-dot menu (⋮) at the top of the home screen.</li>
+    <li>Choose <strong>«ملفي الشخصي»</strong> (My Profile).</li>
+    <li>Scroll to the bottom and tap <strong>«حذف حسابي»</strong>
+    (Delete my account).</li>
+    <li>In the warning dialog, tap <strong>«أكمل الحذف»</strong>
+    (Continue deletion).</li>
+    <li>In the final dialog, type the word <strong>حذف</strong>, then tap
+    <strong>«احذف حسابي نهائياً»</strong> (Delete my account permanently).</li>
+  </ol>
+
+  <p><strong>No app installed?</strong> Send a deletion request to our
+  support team on WhatsApp
+  <a href="https://wa.me/9647836061608">+964 783 606 1608</a>, including the
+  phone number registered to the account. The request is processed after we
+  verify you own that number.</p>
+
+  <ul>
+    <li><strong>Deleted or no longer shown:</strong> account access ends
+    immediately (all device sessions are terminated); your phone number is
+    detached from the account and becomes available for a fresh signup;
+    push notification device tokens are deleted; your products are removed
+    from the marketplace; your name and profile photo are no longer shown to
+    any user (replaced by "Deleted account"); your address is no longer
+    displayed; open buyer requests and offers are withdrawn; an active
+    subscription ends immediately with no refund.</li>
+    <li><strong>Administrative record:</strong> a closed, read-only record of
+    the deleted account (name, phone, deletion date, completed order count)
+    is retained by platform administrators to prevent abuse and to resolve
+    past disputes. It cannot be used to restore the account.</li>
+    <li><strong>Retained data and why:</strong> chats (text, images, voice
+    messages), formal order records, reviews given and received, and
+    previously uploaded files remain — attributed to "Deleted account"
+    without your name, number, or photo. These records belong to
+    <em>both</em> parties of a transaction: erasing them on one party's
+    request would strip the other party of the only evidence of a real
+    transaction and of reviews they earned.</li>
+    <li><strong>Retention period:</strong> deletion is immediate, with no
+    waiting or grace period, and notification tokens are removed at the same
+    moment. The shared transaction records above are retained
+    <strong>with no fixed time limit</strong> for as long as the platform
+    operates. This is a deliberate decision, not neglect: any deletion
+    deadline we set would end the other party's ability to prove their
+    transactions and reviews on a date they never agreed to. There is no
+    delayed automatic deletion of these records in the system.</li>
+    <li><strong>Restriction:</strong> an account cannot be deleted while it
+    has an active unresolved order (awaiting approval, in progress,
+    delivered, or under an open dispute). Complete or cancel the order
+    first, then retry.</li>
+    <li><strong>Warning:</strong> account deletion is permanent and cannot
+    be undone. You may sign up again with the same phone number, but it will
+    be an entirely new, empty account.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>© 2026 شورجة إكسبريس — Shorja Express</footer>
+
+</body>
+</html>
